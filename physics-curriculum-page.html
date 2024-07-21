@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منهج فيزياء 3-1</title>
+    <style>
+        @font-face {
+            font-family: 'KFGQPCKSARegular';
+            src: url('KFGQPCKSARegular-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #1e90ff;
+            margin: 0;
+            font-family: 'KFGQPCKSARegular', Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+            font-size: 28px;
+        }
+        .content {
+            display: flex;
+            flex-grow: 1;
+        }
+        .lesson-list {
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .lesson-item {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lesson-link {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .lesson-link:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>منهج فيزياء 3-1</h1>
+    <div class="content">
+        <div class="lesson-list">
+            <script>
+                const lessonLinks = [
+                    "https://example.com/physics/lesson1",
+                    "https://example.com/physics/lesson2",
+                    "https://example.com/physics/lesson3",
+                    "https://example.com/physics/lesson4",
+                    "https://example.com/physics/lesson5",
+                    "https://example.com/physics/lesson6",
+                    "https://example.com/physics/lesson7",
+                    "https://example.com/physics/lesson8",
+                    "https://example.com/physics/lesson9",
+                    "https://example.com/physics/lesson10",
+                    "https://example.com/physics/lesson11",
+                    "https://example.com/physics/lesson12",
+                    "https://example.com/physics/lesson13",
+                    "https://example.com/physics/lesson14",
+                    "https://example.com/physics/lesson15",
+                    "https://example.com/physics/lesson16",
+                    "https://example.com/physics/lesson17",
+                    "https://example.com/physics/lesson18",
+                    "https://example.com/physics/lesson19",
+                    "https://example.com/physics/lesson20",
+                    "https://example.com/physics/lesson21",
+                    "https://example.com/physics/lesson22",
+                    "https://example.com/physics/lesson23",
+                    "https://example.com/physics/lesson24",
+                    "https://example.com/physics/lesson25",
+                    "https://example.com/physics/lesson26",
+                    "https://example.com/physics/lesson27",
+                    "https://example.com/physics/lesson28",
+                    "https://example.com/physics/lesson29",
+                    "https://example.com/physics/lesson30"
+                ];
+
+                for (let i = 0; i < 30; i++) {
+                    document.write(`
+                        <div class="lesson-item">
+                            <span>الدرس ${i + 1}</span>
+                            <a href="${lessonLinks[i]}" class="lesson-link" target="_blank">اضغط هنا</a>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
