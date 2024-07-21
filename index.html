@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -13,7 +14,7 @@
         }
 
         body {
-            background-color: #1e90ff;
+            background: linear-gradient(135deg, #1e90ff, #87ceeb);
             margin: 0;
             font-family: 'KFGQPCKSARegular', Arial, sans-serif;
             color: white;
@@ -21,39 +22,92 @@
             flex-direction: column;
             min-height: 100vh;
         }
+
         h1 {
             text-align: center;
             padding: 20px;
             margin: 0;
-            background-color: rgba(0, 0, 0, 0.1);
-            font-size: 28px;
+            background: rgba(0, 0, 0, 0.2);
+            font-size: 32px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         .content {
             display: flex;
             flex-grow: 1;
-        }
-        .lesson-list {
-            width: 300px;
-            background-color: rgba(0, 0, 0, 0.1);
+            justify-content: center;
+            align-items: center;
             padding: 20px;
+        }
+
+        .lesson-list {
+            width: 100%;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             overflow-y: auto;
         }
+
         .lesson-item {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
         }
+
+        .lesson-item:hover {
+            transform: scale(1.05);
+        }
+
         .lesson-link {
             color: white;
             text-decoration: none;
             padding: 5px 10px;
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
             border-radius: 5px;
             transition: background-color 0.3s;
         }
+
         .lesson-link:hover {
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .footer {
+            text-align: right;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            font-size: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .warning {
+            color: red;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -106,5 +160,13 @@
             </script>
         </div>
     </div>
+    <div class="footer">
+        <p class="warning">هذه الصفحة خاصة ولا تجوز مشاركتها</p>
+        <div class="contact-info">
+            <p>بريد إلكتروني: <a href="mailto:t9100008@rb.moe.gov.sa">t9100008@rb.moe.gov.sa</a></p>
+            <p>تيليجرام: <a href="https://t.me/na9ersm" target="_blank">@na9ersm</a></p>
+        </div>
+    </div>
 </body>
 </html>
+```
